@@ -16,12 +16,6 @@ public class ShootController : MonoBehaviour
         grabInteractable.activated.AddListener(OnTrigger);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTrigger(ActivateEventArgs arg0)
     {
         var bullet = Instantiate(bulletPrefab, spawnTransform.position, spawnTransform.rotation);
